@@ -1,0 +1,1 @@
+<h2>WAL, est un micro framework PHP</h2>
