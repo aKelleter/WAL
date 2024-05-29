@@ -6,7 +6,7 @@ use Wal\Controller\AbstractController;
 class MainController extends AbstractController {
 
     public function home() {
-		return $this->renderView('main/home.php', ['title' => 'Accueil']);
+		return $this->renderView('main/home.php', ['title' => APP_NAME]);
 	}
 
     public function contact() {

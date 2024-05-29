@@ -1,0 +1,1 @@
+<h2 class="text-center">Entrez en contact avec l'équipe de développement</h2>

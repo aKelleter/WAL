@@ -1,1 +1,1 @@
-<h2>WAL, est un micro framework PHP</h2>
+<h2 class="text-center">... un micro framework PHP simple, performant et sécurisé. </h2>
