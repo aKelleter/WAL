@@ -11,7 +11,7 @@
 		<div class="container">
             <?php include '_header.php'; ?>
 
-            <h1 class="text-center"><?= $data['title']; ?></h1>
+            <h1 class="w-app-title text-center"><?= $data['title']; ?></h1>
 
 			<?php require $templatePath; ?>
 

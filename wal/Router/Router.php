@@ -10,7 +10,7 @@ require dirname(__DIR__, 2) . '/config/routes.php';
 |--------------------------------------------------------------------------
 |   Le routeur doit connaître 3 informations, définies dans des attributs :
 |
-|   - $routes : l’ensemble des routes de l’application (définies dans 📄 config/routes.php)
+|   - $routes : l’ensemble des routes de l’application (définies dans : config/routes.php)
 |   - $availablePaths : l’ensemble des chemins contenus dans ces routes (Exemple : /, /mentions-legales…)
 |   - $requestedPath : le chemin demandé par le client
 |
@@ -61,6 +61,7 @@ class Router {
     private function parseRoutes(): void {
 		$explodedRequestedPath = $this->explodePath($this->requestedPath);
         $params = [];
+        $route = null;
 
         foreach ($this->availablePaths as $candidatePath) {
             $foundMatch = true;
@@ -92,7 +93,7 @@ class Router {
 
 			}
 		}
-
+        
         // Si une route a été trouvée, on instancie le contrôleur et on appelle la méthode associée
         if (isset($route)) {
 			$controller = new $route['controller'];

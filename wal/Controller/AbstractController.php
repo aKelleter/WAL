@@ -32,9 +32,9 @@ abstract class AbstractController {
         }
         $uri .= '&' . implode('&', $strParams);
       }
-      var_dump($uri); die();
+      //DEBUG// var_dump($uri); die();
       header("Location: " . $uri);
-      die;
+      die();
 	}
 
 }
